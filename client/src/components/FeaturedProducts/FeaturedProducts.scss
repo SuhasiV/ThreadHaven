@@ -1,0 +1,40 @@
+@import "../../css-config/mixins.scss";
+.featuredProducts {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include md {
+    margin: 100px 200px;
+  }
+
+  .title {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    @include md {
+      font-size: 36px;
+    }
+  }
+  .product {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    flex-wrap: wrap; // Allow wrapping of cards
+    flex-direction: column;
+    padding: 0;
+    @include md {
+      gap: 50px;
+      flex-direction: row;
+    }
+    .card {
+      width: calc(50% - 10px); // 50% width for each card with 10px gap
+      margin-bottom: 20px; // Adjust margin between cards
+      @include md {
+        width: calc(50% - 25px); // Adjust width for larger screens
+        margin-bottom: 0; // Remove margin between cards on larger screens
+      }
+    }
+  }
+}
