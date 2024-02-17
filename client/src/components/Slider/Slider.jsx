@@ -20,7 +20,7 @@ const Slider = () => {
   return (
     <div className="slider">
       <div
-        className="container"
+        className="sliderContainer"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         <div className="slider1">
