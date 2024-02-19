@@ -27,7 +27,7 @@ const Slider = () => {
           <img src={sliderImg1} alt="" />
           <div className="info">
             {" "}
-            <div className="slider1Title">CHICKCOTOUR</div>
+            <div className="slider1Title">THREADHAVEN</div>
             <div className="slider1Text">
               &quot;Fashion is the armor to <br />
               survive the reality of everyday life.&quot;
